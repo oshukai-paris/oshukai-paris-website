@@ -4,8 +4,8 @@ on:
   push:	
     branches:	
       - master
-
-build-and-deploy:
+jobs:
+    name: build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
