@@ -4,43 +4,55 @@ import oshukaiLogo from '../images/oshukai-karate-kobudo.png';
 
 import './style.scss';
 
-const Navbar = () => (
-	<div className="hero-head is-hidden-mobile">
-		<nav className="navbar">
-			<div className="container">
-				<div className="navbar-brand">
-					<span className="navbar-item">
-						<Link to={`/`}>
-							<img src={oshukaiLogo} alt="Logo" />
-						</Link>
-					</span>
 
-					<span className="navbar-burger burger" data-target="navbarMenuHeroA">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-				</div>
-
-				<div id="navbarMenuHeroA" className="navbar-menu">
-					<div className="navbar-end has-text-white">
-						<span className="navbar-item">
-							<a><Link to={`/`}>Accueil</Link></a>
-						</span>
-						<span className="navbar-item">
-							<Link to={`/about/`}>A Propos</Link>
-						</span>
-						<span className="navbar-item">
-							<Link to={`/blog/`}>Actualités</Link>
-						</span>
-						{/* <span className="navbar-item">
-							<Link to={`/contact/`}>Contact</Link>
-						</span> */}
-					</div>
-				</div>
-			</div>
-		</nav>
-	</div>
+const NavbarItem = props => (
+	<span className="navbar-item">
+		<Link to={props.link}>
+			{props.text}
+		</Link>
+	</span>
 );
 
-export default Navbar;
+const NavbarBurger = props => (
+	<button
+		onClick={props.toggleMenu}
+		className={`button navbar-burger ${props.active ? 'is-active' : ''}`}
+	>
+		<span />
+		<span />
+		<span />
+	</button>
+);
+
+export default class Navbar extends React.Component {
+	state = {
+		activeMenu: false,
+	};
+	toggleMenu = () => {
+		this.setState({
+			activeMenu: !this.state.activeMenu,
+		});
+	};
+	render() {
+		return (
+			<nav className={`navbar is-fixed-top is-white`}>
+				<div className="navbar-brand">
+					<NavbarItem
+						link="/"
+						text={<img src={oshukaiLogo} alt="Logo" />}
+					/>
+					<NavbarBurger
+						active={this.state.activeMenu}
+						toggleMenu={this.toggleMenu}
+					/>
+				</div>
+				<div className={`navbar-menu ${this.state.activeMenu ? 'is-active' : ''}`}>
+					<div className="navbar-end">
+						<NavbarItem link="/about" text="A Propos"/>
+						<NavbarItem link="/blog" text="Actualités"/>
+					</div>
+				</div>
+			</nav>
+		);
+	}
+}
