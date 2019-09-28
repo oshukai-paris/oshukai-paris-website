@@ -44,24 +44,24 @@ const Blog = ( ) => (
               <p className="title">Actualités</p>
 
               {data.allMarkdownRemark.edges.map(({ node }) => (
-                  <div className="box" key={node.id}>
-                      <article className="media">
-                        <figure className="media-left">
-                          <p className="image is-64x64">
-                            <Img fluid={node.frontmatter.logo.childImageSharp.fluid} />
-                          </p>
-                        </figure>
-                          <div className="media-content">
-                            <div className="content">
-                            <Link to={node.fields.slug}>
-                              <strong>{node.frontmatter.title}{" "}</strong><br/>
-                            </Link>
-                              <small>Le {node.frontmatter.date}</small>
-                              <p>{node.frontmatter.summary}</p>
-                            </div>
+                <div className="box" key={node.id}>
+                    <article className="media">
+                      <figure className="media-left">
+                        <p className="image is-64x64">
+                          <Img fluid={node.frontmatter.logo.childImageSharp.fluid} />
+                        </p>
+                      </figure>
+                        <div className="media-content">
+                          <div className="content">
+                          <Link to={node.fields.slug}>
+                            <strong>{node.frontmatter.title}{" "}</strong><br/>
+                          </Link>
+                            <small>Le {node.frontmatter.date}</small>
+                            <p>{node.frontmatter.summary}</p>
                           </div>
-                      </article>
-                  </div>
+                        </div>
+                    </article>
+                </div>
               ))}
 
             </div>
