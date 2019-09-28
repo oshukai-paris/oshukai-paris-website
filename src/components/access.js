@@ -61,7 +61,7 @@ const Access = () => (
 
 					<p>
 						Un cours d’essai gratuit est possible à n'importe quel
-						moment de l'annéepour toute personne voulant essayer
+						moment de l'année pour toute personne voulant essayer
 						la pratique du Karaté ou du Kobudo.
 					</p>
 				</div>
