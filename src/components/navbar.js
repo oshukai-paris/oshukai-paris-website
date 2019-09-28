@@ -35,7 +35,7 @@ export default class Navbar extends React.Component {
 	};
 	render() {
 		return (
-			<nav className={`navbar is-white`}>
+			<nav className={`navbar has-background-white`}>
 				<div className="navbar-brand">
 					<NavbarItem
 						link="/"
