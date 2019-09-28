@@ -23,9 +23,9 @@ const Navbar = () => (
 				</div>
 
 				<div id="navbarMenuHeroA" className="navbar-menu">
-					<div className="navbar-end has-text-black">
+					<div className="navbar-end has-text-white">
 						<span className="navbar-item">
-							<Link to={`/`}>Accueil</Link>
+							<a><Link to={`/`}>Accueil</Link></a>
 						</span>
 						<span className="navbar-item">
 							<Link to={`/about/`}>A Propos</Link>

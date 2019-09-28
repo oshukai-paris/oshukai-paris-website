@@ -6,10 +6,16 @@ import Header from './header';
 import Footer from './footer';
 
 const Layout = ({ children }) => (
-	<div>
+	<div className="container-fluid">
 		<Helmet />
 		<Header />
-		{children}
+		<div className="container">
+			<div className="columns is-mobile is-centered">
+				<div className="column is-10">
+					{children}
+				</div>
+			</div>
+		</div>
 		<Footer />
 	</div>
 );

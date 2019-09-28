@@ -4,9 +4,19 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
+
 .gradientBg {
 	display: flex;
 	background: linear-gradient(to right, $primary-color, $secondary-color);
+}
+
+.coverImageBackground {
+	background-image: url("../images/japan.jpg");
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+	background-size: cover;
+	background-position-y: 40%;
+	height: 300px;
 }
 
 .center {

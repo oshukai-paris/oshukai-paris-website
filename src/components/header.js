@@ -16,14 +16,14 @@ const Header = ({ siteTitle }) => (
       }
       render={data => (
 		  <div>
-			<section className="hero">
+			<section className="hero coverImageBackground">
 				<Navbar />
 				<div className="hero-body">
 					<div className="container center">
 						<article className="media">
 							<div className="media-content">
 								<div className="content">
-									<p className="title is-uppercase is-size-1 has-text-black">
+									<p className="title is-uppercase is-size-1 has-text-white">
 										{data.site.siteMetadata.title}
 									</p>
 								</div>
