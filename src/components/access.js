@@ -23,7 +23,7 @@ const Access = () => (
 
 				<div className="columns">
 
-					<div className="column is-one-third">
+					<div className="column">
 						<article className="media">
 							<figure className="media-left">
 								<span className="icon is-medium">
@@ -52,7 +52,7 @@ const Access = () => (
 						</article>
 					</div>
 
-					<div className="column is-one-third">
+					<div className="column">
 						<article className="media">
 							<figure className="media-left">
 								<span className="icon is-medium">
@@ -94,25 +94,6 @@ const Access = () => (
 											</tbody>
 										</table>
 									</div>
-								</div>
-							</div>
-						</article>
-					</div>
-
-					<div className="column is-one-third">
-						<article className="media">
-							<figure className="media-left">
-								<span className="icon is-medium">
-									<FaThumbsUp size="fa-2x" />
-								</span>
-							</figure>
-							<div className="media-content">
-								<div className="content">
-									<h1 className="title is-size-4">Cours d'Essai</h1>
-									<p className="subtitle is-size-5">
-										Venez assister gratuitement à un cours
-										d'essai quand vous le souhaitez.
-									</p>
 								</div>
 							</div>
 						</article>

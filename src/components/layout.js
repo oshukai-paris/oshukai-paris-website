@@ -5,19 +5,21 @@ import Helmet from './helmet';
 import Header from './header';
 import Footer from './footer';
 
-const Layout = ({ children }) => (
+
+const OneColumnLayout = ({ children }) => (
 	<div className="container-fluid">
 		<Helmet />
 		<Header />
 		<div className="container">
 			<div className="columns is-mobile is-centered">
-				<div className="column is-10">
+				<div className="column is-9">
 					{children}
 				</div>
 			</div>
-		</div>
+    	</div>
 		<Footer />
 	</div>
 );
 
-export default Layout;
+
+export default OneColumnLayout;

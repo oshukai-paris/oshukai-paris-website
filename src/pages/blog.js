@@ -1,10 +1,10 @@
 import React from 'react';
-import Layout from '../components/layout';
+import OneColumnLayout from '../components/layout';
 import Blog from '../components/blog';
 
 const BlogPage = () =>
-<Layout>
+<OneColumnLayout>
     <Blog/>
-</Layout>;
+</OneColumnLayout>;
 
 export default BlogPage;
