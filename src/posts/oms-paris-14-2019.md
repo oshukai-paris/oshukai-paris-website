@@ -2,6 +2,7 @@
 title: Oshukai Paris à l'OMS Paris 14
 date: 2019-09-09
 logo: ../images/oshukai-karate-kobudo.png
+summary: Oshukai Paris était présent lors de l'OMS 14.
 ---
 
 Oshukai Paris était présent lors de l'OMS 14.

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import './style.scss';
@@ -17,6 +17,7 @@ const Blog = ( ) => (
                 frontmatter {
                   title
                   date(formatString: "DD/MM/YYYY")
+                  summary
                   logo {
                     childImageSharp {
                       fluid(maxWidth: 800) {
@@ -52,9 +53,11 @@ const Blog = ( ) => (
                         </figure>
                           <div className="media-content">
                             <div className="content">
+                            <Link to={node.fields.slug}>
                               <strong>{node.frontmatter.title}{" "}</strong><br/>
+                            </Link>
                               <small>Le {node.frontmatter.date}</small>
-                              <div dangerouslySetInnerHTML={{ __html: node.html }} />
+                              <p>{node.frontmatter.summary}</p>
                             </div>
                           </div>
                       </article>
