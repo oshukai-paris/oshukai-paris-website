@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaGoogle} from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaGoogle, FaTwitter} from 'react-icons/fa';
 import { StaticQuery, graphql } from 'gatsby';
 import './style.scss';
 
@@ -12,6 +12,7 @@ const Footer = () => (
 						google
 						facebook
 						instagram
+						twitter
 					}
 				}
 			}
@@ -38,6 +39,12 @@ const Footer = () => (
 						<span className="icon">
 							<a href={data.site.siteMetadata.facebook}>
 								<FaFacebook size="fa-2x"/>
+							</a>
+						</span>
+						&nbsp;
+						<span className="icon">
+							<a href={data.site.siteMetadata.twitter}>
+								<FaTwitter size="fa-2x"/>
 							</a>
 						</span>
 						&nbsp;

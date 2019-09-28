@@ -6,10 +6,10 @@ module.exports = {
 		description: 'Club de Karaté et Kobudo Oshukai Paris',
 		keywords: `Karate, Kobudo, Arts Martiaux, Shorin Ryu, Oshukai, Paris, Okinawa`,
 		siteUrl: `localhost:8000`,
-		twitter: ``,
-		instagram: ``,
-		facebook: ``,
-		google: ``,
+		twitter: `https://twitter.com/Oshukai_Paris`,
+		instagram: `https://www.instagram.com/oshukai_paris/`,
+		facebook: `https://www.facebook.com/OshukaiFrance/`,
+		google: `https://www.google.com/maps/place/Oshuka%C3%AF+Paris+-+Karat%C3%A9+et+Kobudo/@48.828663,2.328805,15z/data=!4m5!3m4!1s0x0:0x4f5574ddd1354051!8m2!3d48.828663!4d2.3288051?hl=fr-FR`,
 
 	},
 	plugins: [
